@@ -11,11 +11,14 @@
 </head>
 <body>
     <?php
+        session_start();
         $email = $_POST['email'];
         $password = $_POST['password'];
         
         if($email && $password) {
             if($email == "admin@admin.com" && $password == "secret") {
+                $_SESSION['email'] = $email;
+                $_SESSION['password'] = $password;
                 header('location:home.php'); 
             }else{
     ?>
