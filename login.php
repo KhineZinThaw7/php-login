@@ -15,7 +15,13 @@
         $password = $_POST['password'];
         
         if($email && $password) {
-            header('location:logout.php'); 
+            if($email == "admin@admin.com" && $password == "secret") {
+                header('location:home.php'); 
+            }else{
+    ?>
+        <div class="alert alert-warning text-center">Invalid User!</div>
+    <?php
+            }
         }
     ?>
     <div class="container">

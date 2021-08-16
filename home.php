@@ -11,13 +11,10 @@
 <body>
     <nav class="navbar navbar-expand-md sticky-top bg-dark">
         <div class="container-fluid">
-        <a href="index.php" class="navbar-brand text-white">Home</a>
+        <a href="home.php" class="navbar-brand text-white">Home</a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="login.php" class="nav-link text-white">Login</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">Register</a>
+                <a href="logout.php" class="nav-link text-white">Logout</a>
             </li>
         </ul>
         </div>
